@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="">
+    <div class=" display-card">
+        {{display}}
+    </div>
+    <div class="container">
+      <div class="grid-container">
+        <button class="grid-item" *ngFor="let digit of digits" (click)="selectedDigit(digit)">
+          {{digit}}
+        </button>
+        <hr/>
+        <button (click)="clear()">Clear</button>
+        <button *ngFor="let symbol of symbols" (click)="selectedSymbol(symbol)">
+          {{symbol}}
+        </button>
+        <button (click)="result()">{{equalSymbol}}</button>
+        <hr/>
+      </div>
+      <div class="btn-symbols">
+
+      </div>
+    </div>
+  </div>
+</div>
